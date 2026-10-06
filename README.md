@@ -1,36 +1,58 @@
-# SilentEarn — Vercel-ready website
+# SilentEarn — Video-First Vercel Website
 
-A lightweight, responsive SilentEarn website built with plain HTML/CSS/JS plus one Vercel serverless function for the contact form.
+SilentEarn is now positioned as a **video-first digital education brand**. The website supports the YouTube, Facebook, and TikTok content business with video discovery, transcripts, useful resources, AI tools, affiliate recommendations, digital products, custom solutions, email signup, WhatsApp, and contact.
 
-## Included
-- SilentEarn brand hero and positioning
-- Digital products store section
-- Custom digital products/services section
-- Blog/learning section
-- FAQ accordion
-- Contact form
-- WhatsApp CTA with +2348110845979
-- Affiliate disclosure
-- Privacy and terms pages
-- Vercel serverless email endpoint using Resend
+## Main website sections
 
-## Deploy to Vercel
-1. Upload this folder to a GitHub repository.
-2. Import the repository into Vercel.
-3. Vercel can deploy it as a static site with the `api/contact.js` function.
-4. Add these Environment Variables in Vercel:
+- Featured video library
+- Video transcripts and notes
+- Useful resources
+- AI tools toolbox
+- Affiliate/recommendation area
+- Digital products
+- Custom digital solutions
+- About SilentEarn
+- Email signup
+- Contact + WhatsApp
+- FAQ, privacy, terms, affiliate disclosure
 
-   - `RESEND_API_KEY` = your Resend API key
-   - `EMAIL_TO` = `SilentEarnn@email.com` (or another inbox you control)
-   - `EMAIL_FROM` = a sender supported by your Resend account, e.g. `SilentEarn Website <hello@yourdomain.com>`
+## Update your video content
 
-5. Redeploy.
+Open `script.js` and edit the `VIDEOS` array.
 
-### Email sender note
-For a production domain, verify a domain in Resend and use a sender address on that verified domain. The default `onboarding@resend.dev` is intended for testing.
+For each published video you can add:
+- `title`
+- `tag`
+- `description`
+- `videoId`
+- `videoUrl`
+- `transcriptUrl`
 
-## Digital product checkout
-Open `script.js` and edit the `PRODUCTS` array.
+When `videoId` is present, the site automatically uses the YouTube thumbnail and watch link.
+
+## Add your social links
+
+In `script.js`, update:
+
+```js
+const SOCIAL_LINKS = {
+  youtube: '',
+  facebook: '',
+  tiktok: ''
+};
+```
+
+Paste your real channel/page URLs there after they are ready.
+
+## Add AI tools and affiliate recommendations
+
+Edit the `AI_TOOLS` and `RECOMMENDATIONS` arrays in `script.js`.
+
+Use real product names and links only after you have personally verified them and, where applicable, joined the relevant affiliate program.
+
+## Digital products
+
+Edit the `PRODUCTS` array in `script.js`.
 
 Each product supports:
 - `price`
@@ -39,7 +61,22 @@ Each product supports:
 - `description`
 - `features`
 
-If `checkoutUrl` is empty, the product button automatically opens WhatsApp with a prefilled order message. Add your Paystack/Payhip/Gumroad/Lemon Squeezy checkout URL when ready.
+If `checkoutUrl` is empty, the product button opens WhatsApp with a prefilled order message.
+
+## Email signup
+
+The newsletter form currently sends a signup notification to the SilentEarn inbox through `/api/contact`.
+
+For a full automated mailing list, connect a newsletter provider later and replace the current form handling with that provider's API.
+
+## Contact email
+
+The contact endpoint uses these Vercel environment variables:
+
+- `RESEND_API_KEY`
+- `EMAIL_TO` = `SilentEarnn@email.com`
+- `EMAIL_FROM` = a sender supported by your Resend account
 
 ## Important
-The sample products and prices are placeholders for launch design. Replace them with your real products, pricing, delivery terms, and checkout links before publishing.
+
+Replace placeholder/sample content, prices, checkout links, video IDs, social URLs, and recommendation links with your real assets before publishing.
