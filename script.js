@@ -1,7 +1,7 @@
 const SOCIAL_LINKS = {
-  youtube: '',
-  facebook: '',
-  tiktok: ''
+  youtube: 'https://youtube.com/@silentearnnn',
+  facebook: 'https://www.facebook.com/SilentEarn',
+  tiktok: 'https://www.tiktok.com/@silentearnn'
 };
 
 /*
