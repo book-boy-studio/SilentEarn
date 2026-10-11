@@ -8,6 +8,7 @@ SilentEarn is a video-first educational brand focused exclusively on YouTube and
 - Philosophy: Learn. Build. Earn. Grow.
 - Niche: AI tools, digital skills, freelancing, productivity, and realistic online opportunities.
 - Visual palette: Midnight navy (#0B1220), electric teal (#18C6B4), soft white (#F7F9FC), and slate gray (#64748B).
+- Brand favicon: `favicon.svg`.
 - Editing workflow: CapCut only. Do not recommend VN or other editing apps.
 
 ## Website purpose
