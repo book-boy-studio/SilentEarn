@@ -1,82 +1,46 @@
-# SilentEarn — Video-First Vercel Website
+# SilentEarn — Blog-First Affiliate Publishing Website
 
-SilentEarn is now positioned as a **video-first digital education brand**. The website supports the YouTube, Facebook, and TikTok content business with video discovery, transcripts, useful resources, AI tools, affiliate recommendations, digital products, custom solutions, email signup, WhatsApp, and contact.
+SilentEarn is a blogging-first digital publishing brand focused on AI tools, digital skills, freelancing, productivity, and realistic online opportunities.
 
-## Main website sections
+## Brand identity
+- Brand: SilentEarn
+- Positioning: AI • Digital Skills • Real Opportunities
+- Philosophy: Learn. Build. Earn. Grow.
+- Primary visual palette: midnight navy (#0b1220), electric teal (#18c6b4), soft white (#f7f9fc), and slate gray (#64748b).
 
-- Featured video library
-- Video transcripts and notes
-- Useful resources
-- AI tools toolbox
-- Affiliate/recommendation area
-- Digital products
-- Custom digital solutions
-- About SilentEarn
-- Email signup
-- Contact + WhatsApp
-- FAQ, privacy, terms, affiliate disclosure
+## Website goals
+- Publish useful SEO articles, tutorials, product reviews, comparisons, and guides.
+- Promote relevant affiliate products with accurate information and clear disclosures.
+- Build a library of genuinely useful free PDF guides and e-books.
+- Support content distribution across YouTube, Facebook, TikTok, Instagram, Pinterest, X, LinkedIn, WhatsApp, and email.
+- Provide contact and partnership options.
+- Avoid unsupported claims, fake reviews, guaranteed income claims, and unverified product pricing.
 
-## Update your video content
+## Add blog articles
+Edit the `ARTICLES` array in `script.js`. Each article has `category`, `title`, `description`, `status`, and `href`. Only use `status: 'Published'` and a live article URL after the article has actually been published.
 
-Open `script.js` and edit the `VIDEOS` array.
+## Add free PDF resources
+Edit the `RESOURCES` array in `script.js`. Add a working download URL only after the PDF exists and has been checked. Do not advertise automatic delivery until the delivery system is configured.
 
-For each published video you can add:
-- `title`
-- `tag`
-- `description`
-- `videoId`
-- `videoUrl`
-- `transcriptUrl`
+## Add product recommendations
+Edit the `RECOMMENDATIONS` array in `script.js`. Add only products that have been checked and use the correct product or affiliate URL. Supported fields include `category`, `title`, `description`, `href`, and `disclosure`. Set disclosure to true when the link is an affiliate link. Keep the public disclosure visible.
 
-When `videoId` is present, the site automatically uses the YouTube thumbnail and watch link.
+## Social profiles
+Known profiles:
+- YouTube: https://youtube.com/@silentearnnn
+- Facebook: https://www.facebook.com/SilentEarn
+- TikTok: https://www.tiktok.com/@silentearnn
+- WhatsApp: https://wa.me/2348110845979
 
-## Add your social links
+For Instagram, Pinterest, X, and LinkedIn, replace the generic platform destinations in `index.html` with the actual SilentEarn profile URLs once those accounts are confirmed. Do not guess usernames.
 
-In `script.js`, update:
-
-```js
-const SOCIAL_LINKS = {
-  youtube: '',
-  facebook: '',
-  tiktok: ''
-};
-```
-
-Paste your real channel/page URLs there after they are ready.
-
-## Add AI tools and affiliate recommendations
-
-Edit the `AI_TOOLS` and `RECOMMENDATIONS` arrays in `script.js`.
-
-Use real product names and links only after you have personally verified them and, where applicable, joined the relevant affiliate program.
-
-## Digital products
-
-Edit the `PRODUCTS` array in `script.js`.
-
-Each product supports:
-- `price`
-- `checkoutUrl`
-- `name`
-- `description`
-- `features`
-
-If `checkoutUrl` is empty, the product button opens WhatsApp with a prefilled order message.
-
-## Email signup
-
-The newsletter form currently sends a signup notification to the SilentEarn inbox through `/api/contact`.
-
-For a full automated mailing list, connect a newsletter provider later and replace the current form handling with that provider's API.
-
-## Contact email
-
-The contact endpoint uses these Vercel environment variables:
-
+## Contact form and email
+The contact endpoint is `/api/contact`. Configure these environment variables in Vercel:
 - `RESEND_API_KEY`
-- `EMAIL_TO` = `SilentEarnn@email.com`
-- `EMAIL_FROM` = a sender supported by your Resend account
+- `EMAIL_TO` (defaults to `SilentEarnn@email.com`)
+- `EMAIL_FROM` (must be a sender supported by your Resend account)
 
-## Important
+The newsletter form currently sends a request to the contact endpoint; it is not an automated email subscription system. Connect a newsletter provider before advertising automatic signup or PDF delivery.
 
-Replace placeholder/sample content, prices, checkout links, video IDs, social URLs, and recommendation links with your real assets before publishing.
+## Deploy
+The repository is designed for Vercel. Commits to the connected deployment branch may trigger a deployment automatically. Confirm the build and test the live site after deployment.
