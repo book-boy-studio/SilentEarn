@@ -1,54 +1,58 @@
-# SilentEarn — YouTube & TikTok Video Brand
+# SilentEarn — Product Promotion Video Brand
 
-SilentEarn is a video-first educational brand focused exclusively on YouTube and TikTok.
+SilentEarn is a product-first video brand focused exclusively on YouTube and TikTok.
 
-## Brand identity
-- Brand: SilentEarn
-- Positioning: AI • Digital Skills • Real Opportunities
-- Philosophy: Learn. Build. Earn. Grow.
-- Niche: AI tools, digital skills, freelancing, productivity, and realistic online opportunities.
-- Visual palette: Midnight navy (#0B1220), electric teal (#18C6B4), soft white (#F7F9FC), and slate gray (#64748B).
-- Brand favicon: `favicon.svg`.
-- Editing workflow: CapCut only. Do not recommend VN or other editing apps.
+## Brand
+- **Name:** SilentEarn
+- **Positioning:** AI • Digital Skills • Real Opportunities
+- **Philosophy:** Learn. Build. Earn. Grow.
+- **Business model:** Research relevant products and promote them through clear product-focused videos and affiliate links.
+- **Editing:** CapCut only. Do not recommend VN.
+- **Visual identity:** Midnight navy (#0B1220), electric teal (#18C6B4), soft white (#F7F9FC), slate gray (#64748B).
 
 ## Website purpose
-This website acts as SilentEarn's official home base for:
-- Direct links to the official YouTube and TikTok channels.
-- A video library featuring actual, published videos.
-- An explanation of SilentEarn's educational topics and approach.
-- Relevant product/affiliate links for tools mentioned in videos.
-- Contact details, affiliate disclosure, privacy information, and terms.
+The website is a product discovery hub supporting SilentEarn's YouTube and TikTok videos. It provides:
+- Featured products and their official or verified affiliate destinations.
+- Published YouTube/TikTok videos connected to products.
+- A concise product-discovery approach.
+- Contact and relevant legal information.
 
-The website is not a blog, PDF/e-book library, newsletter funnel, or multi-platform content hub.
+It is not intended as a blog, e-book/PDF shop, newsletter funnel, or multi-platform social content hub.
+
+## Add products
+Edit the `PRODUCTS` array in `script.js`. Each item can include:
+- `name`: accurate product name.
+- `category`: product category.
+- `hook`: concise, truthful benefit/positioning line.
+- `description`: clear summary based on verified information.
+- `highlights`: optional list of real features.
+- `affiliateUrl`: your valid affiliate link, if you have joined that program.
+- `officialUrl`: official product URL when no affiliate link is being used.
+- `priceLabel`: optional current price only after checking.
+- `imageUrl`: product image URL you have permission to use.
+- `videoUrl`: published SilentEarn video related to the product.
+
+Do not invent products, prices, product features, personal tests, testimonials, or results. Avoid adding a card until the product name, details, and destination have been checked. Affiliate links automatically display a short disclosure on the product card.
 
 ## Add published videos
-Edit the `VIDEOS` array in `script.js`. Only add videos that have actually been published on YouTube or TikTok. Fields:
-- `platform`: `YouTube` or `TikTok`
-- `title`: published title
-- `description`: accurate summary
-- `videoUrl`: real public video URL
-- `videoId`: YouTube video ID, when applicable
-- `thumbnailUrl`: optional publicly accessible thumbnail/image URL
-- `category` and `duration`: optional labels
-
-Do not add invented video titles as published content, guessed links, fake metrics, or fabricated descriptions. If no videos have been added, the website shows a channel links empty state.
-
-## Product links mentioned in videos
-The current homepage provides a product/affiliate information section. Only add product destinations after verifying the official URL and relevant product details. Disclose affiliate relationships clearly. Do not invent testimonials, prices, testing experience, discounts, or expected results. The user may add a product-links data structure later if a dedicated listing is needed.
+Edit the `VIDEOS` array in `script.js`. Only include videos actually published on YouTube or TikTok.
+Fields: `platform`, `title`, `description`, `videoUrl`, `videoId`, `thumbnailUrl`, `category`, and `duration`.
+Use real public video URLs. Do not add placeholder videos as if they were already published.
 
 ## Official channels
 - YouTube: https://youtube.com/@silentearnnn
 - TikTok: https://www.tiktok.com/@silentearnn
 
-No other social platforms should be presented as SilentEarn content channels.
+No other social platforms are official SilentEarn content channels.
 
-## Contact form and email
-The contact endpoint is `/api/contact`. Configure these Vercel environment variables:
+## Affiliate disclosure
+Keep disclosures clear, short, and close to affiliate recommendations. The site currently uses this concise wording: "Some product links are affiliate links. If you buy through an eligible link, SilentEarn may earn a commission at no extra cost to you."
+
+## Contact form
+The endpoint is `/api/contact`. Configure in Vercel:
 - `RESEND_API_KEY`
 - `EMAIL_TO` (defaults to `SilentEarnn@email.com`)
-- `EMAIL_FROM` (must be a sender supported by your Resend account)
-
-The contact form is for messages about video ideas, questions, corrections, product links, and partnerships. There is no newsletter signup in the current website.
+- `EMAIL_FROM` (must be supported by the Resend account)
 
 ## Deployment
-The repository is designed for Vercel. After commits deploy, test the live homepage on mobile and desktop; check both channel links, navigation, contact form, and legal pages. A successful GitHub commit does not alone confirm deployment success.
+After deployment, check the homepage on Android/mobile and desktop, click the YouTube and TikTok links, test navigation, check product destination URLs, and submit the contact form. A successful commit does not itself prove that the live deployment succeeded.
