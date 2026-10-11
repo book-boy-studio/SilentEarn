@@ -115,3 +115,126 @@ button,input,textarea,select{font:inherit}
 .topic-card b{font-size:12px;color:#087f70;margin-top:auto}
 @media(max-width:980px){.article-grid{grid-template-columns:1fr 1fr}.topic-grid{grid-template-columns:1fr 1fr}}
 @media(max-width:780px){.article-grid,.topic-grid{grid-template-columns:1fr}}
+
+/* SilentEarn video-brand refresh: navy, teal, YouTube + TikTok only */
+:root{--brand:#18c6b4;--brand-2:#5eead4;--bg:#f7f9fc;--muted:#64748b;--dark:#0b1220}
+.btn-primary{background:#0b1220;color:#fff}
+.btn-primary:hover{background:#142239}
+.btn-secondary{color:#0b1220;border-color:#dce3eb}
+.btn-secondary:hover{border-color:#18c6b4;color:#087f70}
+.nav-cta{background:#0b1220;color:#fff}
+.hero{position:relative;overflow:hidden;padding:92px 0 82px;background:radial-gradient(circle at 8% 12%,rgba(24,198,180,.13),transparent 32%),radial-gradient(circle at 82% 18%,rgba(94,234,212,.12),transparent 31%),#f7f9fc}
+.hero h1 span{background:linear-gradient(115deg,#087f70,#18c6b4);-webkit-background-clip:text;background-clip:text;color:transparent}
+.eyebrow{color:#087f70}
+.eyebrow-dot{width:8px;height:8px;border-radius:50%;background:#18c6b4;box-shadow:0 0 0 4px rgba(24,198,180,.13)}
+.hero-visual{min-height:430px;position:relative;display:grid;place-items:center;overflow:hidden;border-radius:32px;background:linear-gradient(145deg,#09111f,#14283a);box-shadow:0 28px 70px rgba(11,18,32,.22)}
+.hero-glow{position:absolute;border-radius:50%;filter:blur(3px);opacity:.5}
+.hero-glow-one{width:270px;height:270px;right:-70px;top:-70px;background:#18c6b4}
+.hero-glow-two{width:230px;height:230px;left:-80px;bottom:-90px;background:#155e75}
+.hero-screen{position:relative;z-index:1;width:calc(100% - 52px);padding:27px;border:1px solid rgba(255,255,255,.13);border-radius:25px;background:rgba(6,13,24,.76);backdrop-filter:blur(15px);color:#fff}
+.screen-top{display:flex;align-items:center;gap:9px;font-size:10px;letter-spacing:.12em;color:#cbd5e1;font-weight:800}
+.screen-dot{width:8px;height:8px;background:#18c6b4;border-radius:50%}
+.screen-live{margin-left:auto;padding:5px 7px;border-radius:6px;background:rgba(24,198,180,.16);color:#5eead4;font-size:9px}
+.screen-title{font:700 clamp(34px,4vw,52px)/1.02 "Space Grotesk",sans-serif;letter-spacing:-.05em;margin:35px 0}
+.screen-title em{font-style:normal;color:#5eead4}
+.screen-steps{display:grid;grid-template-columns:repeat(3,1fr);gap:9px}
+.screen-steps>div{display:flex;flex-direction:column;gap:6px;padding:12px 10px;border-radius:13px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.08)}
+.screen-steps span{font-size:10px;color:#5eead4;font-weight:800}
+.screen-steps strong{font-family:"Space Grotesk",sans-serif;font-size:14px}
+.screen-steps small{font-size:10px;color:#a7b4c6}
+.screen-footer{display:flex;align-items:center;justify-content:space-between;margin-top:23px;padding-top:16px;border-top:1px solid rgba(255,255,255,.1);font-size:11px;color:#a7b4c6}
+.screen-play{display:grid;place-items:center;width:31px;height:31px;border-radius:50%;background:#18c6b4;color:#0b1220}
+.channel-strip{background:#0b1220;color:#fff;padding:22px 0}
+.channel-strip-inner{display:flex;align-items:center;justify-content:space-between;gap:24px}
+.channel-strip-inner>div:first-child{display:flex;flex-direction:column;gap:5px}
+.channel-kicker{color:#5eead4;font-size:10px;font-weight:800;letter-spacing:.13em}
+.channel-strip-inner>div:first-child strong{font:600 20px "Space Grotesk",sans-serif}
+.channel-mini-links{display:flex;gap:10px}
+.channel-mini-links>a{display:flex;align-items:center;gap:10px;padding:10px 14px;min-width:180px;border-radius:14px;border:1px solid rgba(255,255,255,.12);background:rgba(255,255,255,.05);transition:.2s}
+.channel-mini-links>a:hover{border-color:#18c6b4;background:rgba(24,198,180,.08)}
+.channel-mini-links>a>span:nth-child(2){display:flex;flex-direction:column;font-size:13px;font-weight:800}
+.channel-mini-links small{font-size:10px;color:#9eadbf;font-weight:500}
+.channel-mini-links b{margin-left:auto;color:#5eead4}
+.channel-symbol{display:grid;place-items:center;width:34px;height:34px;border-radius:10px;font-weight:800;font-size:18px}
+.youtube-symbol{background:#ff0033;color:#fff}
+.tiktok-symbol{background:#111827;color:#fff;border:1px solid #435064}
+.section-heading h2,.split-section h2,.contact-grid h2,.tool-feature-copy h2{letter-spacing:-.04em}
+.section-heading.centered{max-width:760px}
+.video-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+.video-card{transition:transform .2s,border-color .2s}
+.video-card:hover{transform:translateY(-3px);border-color:#b8eee6}
+.video-thumb{display:block;position:relative;aspect-ratio:16/9;background:#0b1220;overflow:hidden}
+.video-thumb img{width:100%;height:100%;object-fit:cover}
+.video-artwork{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:space-between;padding:18px;background:radial-gradient(circle at 85% 10%,rgba(24,198,180,.36),transparent 34%),linear-gradient(145deg,#0b1220,#163346);color:#fff}
+.video-artwork-mark{font:700 48px "Space Grotesk",sans-serif;letter-spacing:-.09em}
+.video-artwork-caption{font-size:9px;font-weight:800;letter-spacing:.15em;color:#5eead4}
+.video-play{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);display:grid;place-items:center;width:48px;height:48px;border-radius:50%;background:#fff;color:#0b1220;box-shadow:0 8px 26px rgba(0,0,0,.25);padding-left:3px}
+.video-platform-badge{position:absolute;left:12px;top:12px;padding:6px 8px;border-radius:7px;background:rgba(11,18,32,.83);color:#fff;font-size:9px;font-weight:800;letter-spacing:.08em}
+.video-body{padding:21px}
+.video-card h3{font-size:21px}
+.video-empty{grid-column:1/-1;display:flex;flex-direction:column;align-items:center;text-align:center;padding:45px 22px;border:1px dashed #cbd5e1;border-radius:24px;background:#fff}
+.video-empty-mark{display:grid;place-items:center;width:62px;height:62px;border-radius:18px;background:#e4faf6;color:#087f70;font-size:24px}
+.video-empty-label{margin-top:18px;color:#087f70;font-weight:800;font-size:10px;letter-spacing:.14em}
+.video-empty h3{font:700 27px "Space Grotesk",sans-serif;margin:10px 0}
+.video-empty p{max-width:550px;color:var(--muted);margin:0 0 20px}
+.video-library-cta{display:flex;justify-content:space-between;align-items:center;gap:22px;margin-top:24px;padding:21px 23px;background:#effbf9;border:1px solid #d1f4ee;border-radius:20px}
+.video-library-cta>div:first-child{display:flex;flex-direction:column;gap:4px}
+.video-library-cta strong{font:600 19px "Space Grotesk",sans-serif}
+.video-library-cta span{font-size:13px;color:#64748b}
+.inline-actions{display:flex;flex-wrap:wrap;gap:10px}
+.inline-actions .btn{padding:12px 14px;font-size:12px}
+.topic-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+.topic-card{padding:23px;border:1px solid var(--line);border-radius:20px;background:#fff;transition:transform .2s,border-color .2s}
+.topic-card:hover{transform:translateY(-3px);border-color:#a5e9df}
+.topic-card>span{display:grid;place-items:center;width:42px;height:42px;border-radius:13px;background:#e4faf6;color:#087f70;font-size:22px;font-weight:800}
+.topic-card h3{font:600 19px/1.2 "Space Grotesk",sans-serif;margin:17px 0 8px}
+.topic-card p{color:var(--muted);font-size:13px;margin:0}
+.tool-feature-grid{display:grid;grid-template-columns:1fr .8fr;gap:64px;align-items:center}
+.tool-feature-copy h2{font:700 clamp(34px,4vw,48px)/1.07 "Space Grotesk",sans-serif;margin:14px 0}
+.tool-feature-copy p{max-width:650px;color:var(--muted);font-size:16px;margin-bottom:24px}
+.tool-feature-card{padding:30px;border:1px solid #d9e3eb;border-radius:25px;background:linear-gradient(145deg,#fff,#f0fdfa);box-shadow:var(--shadow-soft)}
+.tool-feature-icon{display:grid;place-items:center;width:54px;height:54px;border-radius:16px;background:#0b1220;color:#5eead4;font-size:30px}
+.tool-feature-label{display:block;margin-top:20px;color:#087f70;font-weight:800;font-size:9px;letter-spacing:.13em}
+.tool-feature-card h3{font:600 25px "Space Grotesk",sans-serif;margin:8px 0}
+.tool-feature-card p{font-size:14px;color:var(--muted)}
+.disclosure-mini{margin-top:20px;padding-top:14px;border-top:1px solid #dce9e7;color:#64748b;font-size:11px;line-height:1.6}
+.quote-card{position:relative;overflow:hidden;background:radial-gradient(circle at 90% 10%,rgba(24,198,180,.22),transparent 34%),linear-gradient(145deg,#0b1220,#142a3b)}
+.quote-mark{color:#5eead4}
+.quote-accent{width:66px;height:4px;border-radius:99px;background:#18c6b4}
+.principles b{background:#d9faf5;color:#087f70}
+.faq-section{background:#fff}
+.contact-section{background:linear-gradient(135deg,#e7fbf7,#f7f9fc)}
+.contact-links a>span{display:grid;place-items:center;width:40px;height:40px;background:#e4faf6;border-radius:12px;color:#087f70;font-size:21px}
+.contact-small{font-size:12px;color:var(--muted)}
+.contact-small a{color:#087f70;text-decoration:underline;text-underline-offset:3px}
+.btn-tiktok{background:#111827;color:#fff}
+.btn-tiktok:hover{background:#27364b}
+.brand-mark{background:linear-gradient(135deg,#0b1220,#18c6b4);box-shadow:0 8px 24px rgba(24,198,180,.2)}
+.social-pill:hover{border-color:rgba(24,198,180,.6)}
+.site-nav a:hover{color:#087f70}
+.video-tag,.product-badge,.recommendation-card .rec-label{color:#087f70}
+.mini-btn:hover{border-color:#a5e9df;color:#087f70}
+@media(max-width:980px){
+  .topic-grid{grid-template-columns:1fr 1fr}
+  .tool-feature-grid{grid-template-columns:1fr;gap:28px}
+  .channel-strip-inner{align-items:flex-start;flex-direction:column}
+  .channel-mini-links{width:100%}
+  .channel-mini-links>a{flex:1}
+}
+@media(max-width:780px){
+  .hero{padding:66px 0 58px}
+  .hero-grid{gap:36px}
+  .hero-visual{min-height:370px}
+  .hero-screen{width:calc(100% - 28px);padding:20px}
+  .screen-title{margin:27px 0}
+  .screen-steps>div{padding:10px 7px}
+  .screen-steps strong{font-size:12px}
+  .screen-steps small{font-size:9px}
+  .channel-mini-links{flex-direction:column}
+  .channel-mini-links>a{width:100%}
+  .video-grid{grid-template-columns:1fr}
+  .video-library-cta{display:block}
+  .video-library-cta .inline-actions{margin-top:14px}
+  .topic-grid{grid-template-columns:1fr}
+  .tool-feature-card{padding:24px}
+}
