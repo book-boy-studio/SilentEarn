@@ -1,46 +1,53 @@
-# SilentEarn — Blog-First Affiliate Publishing Website
+# SilentEarn — YouTube & TikTok Video Brand
 
-SilentEarn is a blogging-first digital publishing brand focused on AI tools, digital skills, freelancing, productivity, and realistic online opportunities.
+SilentEarn is a video-first educational brand focused exclusively on YouTube and TikTok.
 
 ## Brand identity
 - Brand: SilentEarn
 - Positioning: AI • Digital Skills • Real Opportunities
 - Philosophy: Learn. Build. Earn. Grow.
-- Primary visual palette: midnight navy (#0b1220), electric teal (#18c6b4), soft white (#f7f9fc), and slate gray (#64748b).
+- Niche: AI tools, digital skills, freelancing, productivity, and realistic online opportunities.
+- Visual palette: Midnight navy (#0B1220), electric teal (#18C6B4), soft white (#F7F9FC), and slate gray (#64748B).
+- Editing workflow: CapCut only. Do not recommend VN or other editing apps.
 
-## Website goals
-- Publish useful SEO articles, tutorials, product reviews, comparisons, and guides.
-- Promote relevant affiliate products with accurate information and clear disclosures.
-- Build a library of genuinely useful free PDF guides and e-books.
-- Support content distribution across YouTube, Facebook, TikTok, Instagram, Pinterest, X, LinkedIn, WhatsApp, and email.
-- Provide contact and partnership options.
-- Avoid unsupported claims, fake reviews, guaranteed income claims, and unverified product pricing.
+## Website purpose
+This website acts as SilentEarn's official home base for:
+- Direct links to the official YouTube and TikTok channels.
+- A video library featuring actual, published videos.
+- An explanation of SilentEarn's educational topics and approach.
+- Relevant product/affiliate links for tools mentioned in videos.
+- Contact details, affiliate disclosure, privacy information, and terms.
 
-## Add blog articles
-Edit the `ARTICLES` array in `script.js`. Each article has `category`, `title`, `description`, `status`, and `href`. Only use `status: 'Published'` and a live article URL after the article has actually been published.
+The website is not a blog, PDF/e-book library, newsletter funnel, or multi-platform content hub.
 
-## Add free PDF resources
-Edit the `RESOURCES` array in `script.js`. Add a working download URL only after the PDF exists and has been checked. Do not advertise automatic delivery until the delivery system is configured.
+## Add published videos
+Edit the `VIDEOS` array in `script.js`. Only add videos that have actually been published on YouTube or TikTok. Fields:
+- `platform`: `YouTube` or `TikTok`
+- `title`: published title
+- `description`: accurate summary
+- `videoUrl`: real public video URL
+- `videoId`: YouTube video ID, when applicable
+- `thumbnailUrl`: optional publicly accessible thumbnail/image URL
+- `category` and `duration`: optional labels
 
-## Add product recommendations
-Edit the `RECOMMENDATIONS` array in `script.js`. Add only products that have been checked and use the correct product or affiliate URL. Supported fields include `category`, `title`, `description`, `href`, and `disclosure`. Set disclosure to true when the link is an affiliate link. Keep the public disclosure visible.
+Do not add invented video titles as published content, guessed links, fake metrics, or fabricated descriptions. If no videos have been added, the website shows a channel links empty state.
 
-## Social profiles
-Known profiles:
+## Product links mentioned in videos
+The current homepage provides a product/affiliate information section. Only add product destinations after verifying the official URL and relevant product details. Disclose affiliate relationships clearly. Do not invent testimonials, prices, testing experience, discounts, or expected results. The user may add a product-links data structure later if a dedicated listing is needed.
+
+## Official channels
 - YouTube: https://youtube.com/@silentearnnn
-- Facebook: https://www.facebook.com/SilentEarn
 - TikTok: https://www.tiktok.com/@silentearnn
-- WhatsApp: https://wa.me/2348110845979
 
-For Instagram, Pinterest, X, and LinkedIn, replace the generic platform destinations in `index.html` with the actual SilentEarn profile URLs once those accounts are confirmed. Do not guess usernames.
+No other social platforms should be presented as SilentEarn content channels.
 
 ## Contact form and email
-The contact endpoint is `/api/contact`. Configure these environment variables in Vercel:
+The contact endpoint is `/api/contact`. Configure these Vercel environment variables:
 - `RESEND_API_KEY`
 - `EMAIL_TO` (defaults to `SilentEarnn@email.com`)
 - `EMAIL_FROM` (must be a sender supported by your Resend account)
 
-The newsletter form currently sends a request to the contact endpoint; it is not an automated email subscription system. Connect a newsletter provider before advertising automatic signup or PDF delivery.
+The contact form is for messages about video ideas, questions, corrections, product links, and partnerships. There is no newsletter signup in the current website.
 
-## Deploy
-The repository is designed for Vercel. Commits to the connected deployment branch may trigger a deployment automatically. Confirm the build and test the live site after deployment.
+## Deployment
+The repository is designed for Vercel. After commits deploy, test the live homepage on mobile and desktop; check both channel links, navigation, contact form, and legal pages. A successful GitHub commit does not alone confirm deployment success.
