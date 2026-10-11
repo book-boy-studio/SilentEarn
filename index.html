@@ -13,6 +13,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -159,7 +160,7 @@
           <label><span>Name *</span><input name="name" required autocomplete="name" placeholder="Your name" /></label>
           <label><span>Email *</span><input type="email" name="email" required autocomplete="email" placeholder="you@example.com" /></label>
           <label><span>Request type *</span><select name="requestType" required><option value="">Choose one</option><option>Video topic suggestion</option><option>Question about a video</option><option>Product / affiliate question</option><option>Correction</option><option>Partnership enquiry</option><option>Other</option></select></label>
-          <label><span>Video or product (optional)</span><input name="phone" autocomplete="off" placeholder="Video title or product name" /></label>
+          <label><span>Phone / WhatsApp (optional)</span><input name="phone" autocomplete="tel" placeholder="+234..." /></label>
         </div>
         <label><span>Your message *</span><textarea name="message" required rows="5" placeholder="Tell SilentEarn how we can help."></textarea></label>
         <label class="checkbox"><input type="checkbox" name="consent" required /><span>I agree that SilentEarn can use these details to respond to my request.</span></label>
