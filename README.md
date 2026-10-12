@@ -23,7 +23,7 @@ SilentEarn is a blogging-first digital publishing and product-discovery brand fo
 ## Blog articles
 The homepage reads the `ARTICLES` array in `script.js`. The first article is `how-to-evaluate-ai-tools-before-paying.html`. Add only published, complete articles, with accurate summaries and working URLs.
 
-## Add a product
+## Official creator and logo assets\nThe owner has supplied official creator photographs and the exact SilentEarn logo. See `SILENTEARN_OFFICIAL_BRAND_ASSET_RULES.md` for authoritative handling rules. The originals are preserved in the downloadable SilentEarn Official Brand Assets pack; the website does not use these images until the display copies are added to the repository under the documented asset paths and the markup is updated. Never substitute a generated creator or a redesigned logo.\n\n## Add a product
 Edit the `PRODUCTS` array near the top of `script.js`. Do not add fake data or placeholders as if they are published products. Each real product can include:
 - `name`, `category`, and `description`
 - `affiliateUrl` or `officialUrl` (never mislabel an ordinary URL as an affiliate link)
