@@ -21,9 +21,9 @@ SilentEarn is currently a product-first publishing brand. Borrow the business me
 
 Do not make a product recommendation purely because its commission is high. Never call an ordinary URL an affiliate link.
 
-## Revenue stream 2: free resources and paid digital products
+## Revenue stream 2: premium paid PDFs and digital products
 
-1. Create a free resource that helps readers complete one specific task.
+1. Validate one specific buyer problem using reader questions, search intent, and available evidence.
 2. Confirm that the resource is genuinely useful without buying anything.
 3. Use it to support a relevant article and, when properly configured, invite readers to opt into SilentEarn Notes.
 4. Watch which questions recur, what readers save, and which topics receive meaningful engagement.
@@ -87,7 +87,7 @@ Personalise this message for each company. Do not mass-send the same message to 
 
 Week 1: Check the website forms and deployment; connect Search Console and simple privacy-respecting analytics as appropriate; shortlist 10 relevant software products and research their programmes.
 
-Week 2: Publish one complete campaign for the best-fit product: research, SEO article, real visual assets, finished free worksheet/PDF, clear disclosures, and platform-specific content.
+Week 2: Publish one complete campaign for the best-fit product: research, SEO article, real visual assets, finished premium paid PDF, clear disclosures, and platform-specific content.
 
 Week 3: Share the campaign on the most relevant channels, contact 5-10 suitable affiliate/partnership teams with individual messages, and begin measuring link clicks and reader reactions.
 
@@ -113,7 +113,22 @@ Use SilentEarn's signature content:
 - **The Quiet Advantage:** less hype, better questions, more useful decisions.
 - **The SilentEarn Reality Check:** what it does, who it suits, cost/limitations, and alternatives.
 - **One Useful Win:** a small action that can be completed in 5-15 minutes.
-- **The Resource Vault:** genuinely useful free guides.
+- **The Premium PDF Store:** substantive paid guides, workbooks, and templates sold through Selar.
 - **Learning Paths:** practical sequences that build skills over time.
 
 Make these features helpful and optional. Avoid dark patterns, fake countdowns, intrusive popups, manipulative notifications, or unnecessary barriers to free information.
+
+
+## Final channel policy
+Only use these SilentEarn destinations in public campaign and website links:
+- YouTube: https://youtube.com/@silentearnnn
+- TikTok: https://www.tiktok.com/@silentearnn
+- Facebook: https://www.facebook.com/SilentEarn
+- Pinterest: https://www.pinterest.com/silentearnn
+- Medium blog: https://silentearn.medium.com
+- Selar paid store: https://selar.com/m/SilentEarn
+- Linktree bio hub: https://linktr.ee/SilentEarn
+- Email: SilentEarnn@gmail.com
+- Phone: +2348110845979
+
+Do not add any other social platform/profile unless the owner explicitly changes this list. Do not offer free PDF downloads by default.
