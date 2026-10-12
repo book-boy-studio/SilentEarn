@@ -76,3 +76,22 @@ After deployment:
 - Verify every product URL, disclosure, and resource file.
 - Replace generic social destinations with confirmed brand profiles.
 - Confirm the Vercel deployment actually succeeded; a GitHub commit alone does not prove the live site is working.
+
+
+## Link in bio
+SilentEarn's owned, Linktree-style page is `links.html`. Use the live full URL (your website domain plus `/links.html`) as the website link in social profiles after deployment. This is a SilentEarn page hosted on the brand's own website, not a separately created third-party Linktree account. Keep it updated as official profiles are confirmed.
+
+Current confirmed profile destinations:
+- YouTube: https://youtube.com/@silentearnnn
+- Facebook: https://www.facebook.com/SilentEarn
+- TikTok: https://www.tiktok.com/@silentearnn
+- WhatsApp: https://wa.me/2348110845979
+
+Instagram, Pinterest, X, and LinkedIn are labelled as upcoming until the owner supplies the actual SilentEarn profile URLs. Do not use generic platform homepages as official profile links.
+
+## Official web assets
+- Full exact logo for dark/light presentation: `assets/brand/silenteearn-official-logo.webp`
+- Symbol derivative for compact brand contexts: `assets/brand/silenteearn-official-symbol.webp`
+- Primary creator portrait: `assets/creator/silenteearn-creator-portrait.webp`
+
+These are derivatives from the owner's supplied official files; keep the originals preserved in the brand asset bundle and never substitute a generated creator or logo.
