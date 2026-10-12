@@ -442,3 +442,7 @@ html{scroll-padding-top:92px}
   .saved-actions{align-items:flex-start;flex-direction:row}
   .win-footer{align-items:flex-start;flex-direction:column}
 }
+
+.pending-social{opacity:.58;cursor:default;pointer-events:none}
+.resource-card-actions .save-button{white-space:nowrap}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
