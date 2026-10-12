@@ -36,7 +36,8 @@ function escapeHtml(value) {
   return String(value == null ? '' : value).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/'/g,'&#39;');
 }
 function isWebUrl(value) {
-  try { const u = new URL(value, window.location.href); return u.protocol === 'https:' || u.protocol === 'http:'; }
+  if (typeof value !== 'string' || !value.trim()) return false;
+  try { const u = new URL(value); return u.protocol === 'https:' || u.protocol === 'http:'; }
   catch (e) { return false; }
 }
 function readSaved() {
