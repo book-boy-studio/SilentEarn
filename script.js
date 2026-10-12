@@ -1,6 +1,6 @@
 const PRODUCTS = []; // Add only researched, real products and verified destinations.
 const RESOURCES = [
-  { id:'reality-check', title:'The Product Reality Check Worksheet', category:'BUYING SMART', description:'A practical worksheet to define your need, verify a product, compare trade-offs, and make a considered decision.', href:'product-reality-check.html', status:'Free printable guide', cta:'Open worksheet' },
+  { id:'reality-check', title:'The Product Reality Check Worksheet', category:'BUYING SMART', description:'A practical worksheet to define your need, verify a product, compare trade-offs, and make a considered decision.', href:'product-reality-check.html', status:'Free printable guide', cta:'Open / save as PDF' },
   { id:'skill-planner', title:'Digital Skill Path Planner', category:'LEARNING', description:'A guided planner for comparing a skill, learning requirements, practice opportunities, and next steps.', href:'', status:'In preparation', cta:'Coming soon' },
   { id:'affiliate-checklist', title:'Before You Buy: AI Tool Checklist', category:'AI TOOLS', description:'A compact checklist for checking pricing, limitations, privacy, and suitability before signing up.', href:'', status:'In preparation', cta:'Coming soon' }
 ];
