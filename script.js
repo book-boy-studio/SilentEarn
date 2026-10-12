@@ -80,6 +80,19 @@ function renderSaved() {
     btn.addEventListener('click', function() { writeSaved(readSaved().filter(function(x){return x.id !== btn.getAttribute('data-remove-save');})); renderSaved(); renderSaveButtons(); });
   });
 }
+function renderArticles() {
+  const grid = document.getElementById('article-grid');
+  if (!grid) return;
+  if (!ARTICLES.length) {
+    grid.innerHTML = '<div class="article-empty"><span>✦</span><h3>The first SilentEarn guides are being prepared.</h3><p>We will publish articles here when they are complete, checked, and ready to read.</p></div>';
+    return;
+  }
+  grid.innerHTML = ARTICLES.map(function(article) {
+    const saved = isSaved(article.id);
+    return '<article class="article-card"><div class="article-art"><span class="article-art-mark">SE</span><small>' + escapeHtml(article.category || 'SILENTEARN GUIDE') + '</small><strong>Research first.<br>Choose with confidence.</strong></div><div class="article-body"><span class="article-status">Published guide</span><h3>' + escapeHtml(article.title) + '</h3><p>' + escapeHtml(article.description) + '</p><div class="article-meta"><span>' + escapeHtml(article.readTime || 'Practical guide') + '</span><span>' + escapeHtml(article.date || '') + '</span></div><div class="article-card-actions"><a class="btn btn-primary" href="' + escapeHtml(article.href) + '">Read guide →</a><button type="button" class="save-button" data-save-id="' + escapeHtml(article.id) + '" aria-pressed="' + String(saved) + '">' + (saved ? '✓ Saved' : '＋ Save for later') + '</button></div></div></article>';
+  }).join('');
+  renderSaveButtons();
+}
 function renderResources() {
   const grid = document.getElementById('resource-grid');
   if (!grid) return;
@@ -174,7 +187,8 @@ function initSaved() {
       const id = btn.getAttribute('data-save-id');
       const path = SKILL_PATHS.find(function(x){return x.id===id;});
       const resource = RESOURCES.find(function(x){return x.id===id;});
-      const item = path ? {id:path.id,title:path.title,description:path.description,category:'LEARNING PATH',href:'#paths'} : resource ? {id:resource.id,title:resource.title,description:resource.description,category:resource.category,href:resource.href} : null;
+      const article = ARTICLES.find(function(x){return x.id===id;});
+      const item = path ? {id:path.id,title:path.title,description:path.description,category:'LEARNING PATH',href:'#paths'} : resource ? {id:resource.id,title:resource.title,description:resource.description,category:resource.category,href:resource.href} : article ? {id:article.id,title:article.title,description:article.description,category:article.category,href:article.href} : null;
       if (item) toggleSaved(item);
     });
   });
@@ -206,6 +220,6 @@ function initForms() {
   if(nf&&ns&&nb)nf.addEventListener('submit',function(e){e.preventDefault();sendForm(nf,ns,nb,'Your request was sent to SilentEarn. You are not subscribed until the newsletter system confirms signup.');});
 }
 document.addEventListener('DOMContentLoaded',function(){
-  renderResources();renderPaths();renderProducts();renderFinder();initUsefulWin();initNav();initSaved();initForms();
+  renderArticles();renderResources();renderPaths();renderProducts();renderFinder();initUsefulWin();initNav();initSaved();initForms();
   const year=document.getElementById('year');if(year)year.textContent=new Date().getFullYear();
 });
