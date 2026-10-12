@@ -20,7 +20,7 @@ SilentEarn is a practical digital publishing and product-promotion brand focused
 - **Email:** SilentEarnn@gmail.com
 - **Phone:** +2348110845979
 
-Do not add or use Instagram, X/Twitter, LinkedIn, WhatsApp, or any other social-media profile unless the owner explicitly changes this list. Do not link generic platform homepages as SilentEarn profiles.
+Do not add or use any social-media profile outside this official list unless the owner explicitly changes it. Do not link generic platform homepages as SilentEarn profiles.
 
 ## Website purpose and key features
 - Explain SilentEarn and the brand's research-first approach.
