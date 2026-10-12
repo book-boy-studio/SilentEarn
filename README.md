@@ -63,7 +63,7 @@ The API endpoint is `/api/contact`. Configure these Vercel environment variables
 The SilentEarn Notes form currently sends a contact request. It does not automatically subscribe users to a mailing list or deliver PDF files. Connect a newsletter provider, consent process, and unsubscribe mechanism before promising automated email delivery.
 
 ## Revenue-inspired outreach
-See `SILENTEARN_REVENUE_AND_ENGAGEMENT_PLAYBOOK.md` for a realistic approach to prospecting, affiliate partnerships, brand sponsorships, digital product validation, and measurement.
+See `SILENTEARN_REVENUE_AND_ENGAGEMENT_PLAYBOOK.md` for the revenue strategy and outreach process. See `SILENTEARN_CLAUDE_PROJECT_ADDENDUM.md` for instructions you can add to your Claude Project Knowledge.
 
 ## Deployment checklist
 After deployment:
