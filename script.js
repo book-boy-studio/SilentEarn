@@ -1,6 +1,6 @@
 const PRODUCTS = []; // Add only researched, real products and verified destinations.
 const RESOURCES = [
-  { id:'reality-check', title:'The Product Reality Check Worksheet', category:'BUYING SMART', description:'A practical worksheet to define your need, verify a product, compare trade-offs, and make a considered decision.', href:'product-reality-check.html', status:'Free printable guide', cta:'Open / save as PDF' },
+  { id:'reality-check', title:'The Product Reality Check Worksheet', category:'BUYING SMART', description:'A practical worksheet to define your need, verify a product, compare trade-offs, and make a considered decision.', href:'product-reality-check.html', fileUrl:'assets/silenteearn-reality-check-worksheet.pdf.b64', fileName:'SilentEarn-Product-Reality-Check.pdf', status:'Free printable guide', cta:'Download PDF' },
   { id:'skill-planner', title:'Digital Skill Path Planner', category:'LEARNING', description:'A guided planner for comparing a skill, learning requirements, practice opportunities, and next steps.', href:'', status:'In preparation', cta:'Coming soon' },
   { id:'affiliate-checklist', title:'Before You Buy: AI Tool Checklist', category:'AI TOOLS', description:'A compact checklist for checking pricing, limitations, privacy, and suitability before signing up.', href:'', status:'In preparation', cta:'Coming soon' }
 ];
@@ -98,11 +98,55 @@ function renderResources() {
   if (!grid) return;
   grid.innerHTML = RESOURCES.map(function(item) {
     const ready = Boolean(item.href);
-    const action = ready ? '<a class="btn btn-secondary" href="' + escapeHtml(item.href) + '">' + escapeHtml(item.cta) + ' →</a>' : '<span class="resource-coming">' + escapeHtml(item.cta) + '</span>';
+    const action = item.fileUrl ? '<button type="button" class="btn btn-secondary" data-download-resource="' + escapeHtml(item.id) + '">' + escapeHtml(item.cta) + ' ↓</button>' : ready ? '<a class="btn btn-secondary" href="' + escapeHtml(item.href) + '">' + escapeHtml(item.cta) + ' →</a>' : '<span class="resource-coming">' + escapeHtml(item.cta) + '</span>';
     const saveBtn = '<button type="button" class="save-button" data-save-id="' + escapeHtml(item.id) + '">' + (isSaved(item.id) ? '✓ Saved' : '＋ Save for later') + '</button>';
     return '<article class="resource-card"><div class="resource-card-top"><span class="resource-icon">▤</span><span class="resource-tag">' + escapeHtml(item.category) + '</span></div><span class="resource-status">' + escapeHtml(item.status) + '</span><h3>' + escapeHtml(item.title) + '</h3><p>' + escapeHtml(item.description) + '</p><div class="resource-card-actions">' + action + saveBtn + '</div></article>';
   }).join('');
   renderSaveButtons();
+  grid.querySelectorAll('[data-download-resource]').forEach(function(button) {
+    button.addEventListener('click', function() {
+      const item = RESOURCES.find(function(resource) { return resource.id === button.getAttribute('data-download-resource'); });
+      if (item && item.fileUrl) downloadPdfResource(item, button);
+    });
+  });
+}
+async function downloadPdfResource(item, button) {
+  const original = button.textContent;
+  button.disabled = true;
+  button.textContent = 'Preparing PDF…';
+  try {
+    const response = await fetch(item.fileUrl, {cache:'no-store'});
+    if (!response.ok) throw new Error('The PDF file could not be loaded.');
+    const encoded = (await response.text()).trim();
+    if (!encoded || !/^[A-Za-z0-9+/]+={0,2}$/.test(encoded)) throw new Error('The PDF download file is invalid.');
+    const binary = window.atob(encoded);
+    if (!binary.startsWith('%PDF-') || !binary.trimEnd().endsWith('%%EOF')) throw new Error('The PDF file did not pass validation.');
+    const bytes = new Uint8Array(binary.length);
+    for (let i = 0; i < binary.length; i++) bytes[i] = binary.charCodeAt(i);
+    const blob = new Blob([bytes], {type:'application/pdf'});
+    const url = URL.createObjectURL(blob);
+    const link = document.createElement('a');
+    link.href = url;
+    link.download = item.fileName || 'SilentEarn-Resource.pdf';
+    document.body.appendChild(link);
+    link.click();
+    link.remove();
+    window.setTimeout(function(){URL.revokeObjectURL(url);},1500);
+    button.textContent = 'Downloaded ✓';
+  } catch (error) {
+    button.textContent = 'Open printable version ↗';
+    button.disabled = false;
+    button.onclick = function(){ window.location.href = item.href; };
+    const note = document.createElement('p');
+    note.className = 'download-fallback-note';
+    note.textContent = (error && error.message ? error.message + ' ' : '') + 'Use the printable worksheet instead.';
+    button.closest('.resource-card').appendChild(note);
+    return;
+  } finally {
+    if (button.disabled) {
+      window.setTimeout(function(){ button.disabled = false; if (button.textContent === 'Downloaded ✓') button.textContent = original; }, 2200);
+    }
+  }
 }
 function renderPaths() {
   const grid = document.getElementById('path-grid');
