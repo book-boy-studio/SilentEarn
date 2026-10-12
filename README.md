@@ -20,6 +20,9 @@ SilentEarn is a blogging-first digital publishing and product-discovery brand fo
 - Revenue pathways: affiliate partnerships, validated digital products, and transparent company partnerships.
 - Contact form, WhatsApp, affiliate disclosure, privacy, and terms.
 
+## Blog articles
+The homepage reads the `ARTICLES` array in `script.js`. The first article is `how-to-evaluate-ai-tools-before-paying.html`. Add only published, complete articles, with accurate summaries and working URLs.
+
 ## Add a product
 Edit the `PRODUCTS` array near the top of `script.js`. Do not add fake data or placeholders as if they are published products. Each real product can include:
 - `name`, `category`, and `description`
