@@ -14,7 +14,7 @@ Use this document alongside the SilentEarn Brand Bible and Ultimate Full Campaig
 1. **The SilentEarn Reality Check:** for every product, explain what is verified, who it suits, who should be cautious, current pricing and terms when available, limitations, privacy/compatibility issues when relevant, alternatives, and details still unknown. Never invent a test or rating.
 2. **Find My Tool:** help visitors choose a category or starting point based on their problem, experience level, and budget. Do not recommend a product unless its fit and facts have been checked.
 3. **One Useful Win:** every major article/PDF/campaign should include one small actionable task the reader can attempt in roughly 5-15 minutes. Keep it realistic and useful.
-4. **Free Resource Vault:** create genuine standalone guides, checklists, worksheets, and e-books. Mark resources as available only after the actual file is created, checked, and linked.
+4. **Premium PDF Store:** develop paid PDFs, e-books, templates, and workbooks with substantial practical value. Selar is the official storefront and delivery destination; never present a PDF as a free lead magnet unless the owner explicitly changes this policy.
 5. **Skill Paths:** organise relevant articles into progressive learning sequences rather than disconnected posts.
 6. **Save for Later:** provide a practical reading list or downloadable checklist when site/account support is unavailable. Do not claim cross-device account syncing without a real account system.
 7. **SilentEarn Notes:** email content should include one useful idea, one resource or product insight where relevant, and one practical action. Never call a reader subscribed unless the newsletter provider has actually confirmed subscription.
@@ -36,7 +36,7 @@ SilentEarn must pursue legitimate revenue, but never make guaranteed income prom
 Identify relevant tools, verify the product, apply to the correct affiliate program, request demo access or reader offers when appropriate, publish useful high-intent articles, and track clicks/conversions using the program's reports. Do not select a product only because the commission is high.
 
 ### 2. Own digital products
-Offer useful free guides first. Use reader questions and campaign performance to identify problems worth solving; develop paid e-books, templates, or workbooks only when there is a clear audience need. Ensure every file and checkout/delivery path is real and tested before charging.
+Paid PDFs and digital products are the default. Validate the buyer problem, build a genuinely useful product with actionable instruction and reusable tools, finish and quality-check the real file, set a defensible price, then publish through the official Selar store. Do not promise guaranteed outcomes. Keep ordinary blog articles and videos free when useful.
 
 ### 3. Direct company partnerships
 Borrow the proactive business lesson from outbound-sales examples: identify relevant companies, research the real product and audience fit, personalise a short proposal, demonstrate the content angle, follow up respectfully, agree terms, and measure outcomes. For SilentEarn, prioritise affiliate relationships, demo access, reader discounts, and transparently sponsored educational content. Do not automatically turn the brand into an ad-creative or UGC agency.
@@ -71,4 +71,23 @@ A claim about making a million dollars in six months, sixteen clients paying $10
 - Explain how any paid relationship works. Payment is not proof of independent endorsement.
 
 ## Metrics
-Track published and updated content, search impressions/clicks, engaged visits, outbound affiliate clicks, reported conversions/approved commissions, free resource use, confirmed email opt-ins, partnership outreach/replies, and product sales where available. Do not claim a campaign generated a sale unless tracking confirms it.
+Track published and updated content, search impressions/clicks, engaged visits, outbound affiliate clicks, reported conversions/approved commissions, paid product-page visits and sales, confirmed email opt-ins, partnership outreach/replies, and product sales where available. Do not claim a campaign generated a sale unless tracking confirms it.
+
+
+## FINAL OFFICIAL CHANNELS — SOURCE OF TRUTH
+Use only the destinations in this list. Do not create, mention, add, or recommend other SilentEarn social-media profiles unless the owner explicitly changes this decision.
+- YouTube: https://youtube.com/@silentearnnn
+- TikTok: https://www.tiktok.com/@silentearnn
+- Facebook: https://www.facebook.com/SilentEarn
+- Pinterest: https://www.pinterest.com/silentearnn
+- Medium (official blog): https://silentearn.medium.com
+- Selar (paid PDF/digital store): https://selar.com/m/SilentEarn
+- Linktree (primary social bio hub): https://linktr.ee/SilentEarn
+- Email: SilentEarnn@gmail.com
+- Phone: +2348110845979
+
+## Social distribution rules
+Create platform-specific campaign assets only for YouTube, TikTok, Facebook, Pinterest, and Medium. Use Linktree as the primary destination in social bio fields and route visitors from it to the relevant Medium article, Selar product, website resource, or contact route. Never assume any external platform accepts clickable links in titles or captions; use an appropriate bio call to action when needed and follow current platform rules.
+
+## Premium PDF value standard
+Every paid PDF needs a clear buyer, a specific problem, measurable scope, substantive instruction, examples, actionable steps, reusable templates or worksheets where relevant, a polished mobile-readable layout, accurate sources when factual claims require support, and an implementation/next-steps section. Provide a clear preview and honest product description. Price and value claims must be defensible. A beautiful cover alone is not buyer value. Never invent testimonials or claim the product guarantees revenue or other results.
