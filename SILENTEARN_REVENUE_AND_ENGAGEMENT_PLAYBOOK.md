@@ -23,17 +23,20 @@ Do not make a product recommendation purely because its commission is high. Neve
 
 ## Revenue stream 2: premium paid PDFs and digital products
 
+SilentEarn PDFs, workbooks, templates, and downloadable guides are paid products by default. Selar is the official store and checkout/delivery destination.
+
 1. Validate one specific buyer problem using reader questions, search intent, and available evidence.
-2. Confirm that the resource is genuinely useful without buying anything.
-3. Use it to support a relevant article and, when properly configured, invite readers to opt into SilentEarn Notes.
-4. Watch which questions recur, what readers save, and which topics receive meaningful engagement.
-5. Develop a paid e-book, worksheet bundle, or toolkit only after there is a clear problem worth solving.
-6. Test the outline or sample with readers before investing heavily in production.
-7. Describe exactly what buyers receive, the delivery method, and any relevant limitations.
-8. Use a legitimate checkout and delivery tool before accepting payment.
+2. Define the buyer, promise, scope, and limits of the product. Do not make exaggerated claims or guarantee results.
+3. Build a substantive product: clear step-by-step instruction, worked examples, actionable exercises, useful templates/checklists where relevant, and an implementation plan.
+4. Check every factual claim, link, example, and source where appropriate. Avoid filler, generic repetition, fabricated case studies, and unsupported outcomes.
+5. Design for professional quality and mobile reading: clear typography, consistent layouts, useful section hierarchy, diagrams/tables only where they improve understanding, and a polished cover.
+6. Export the real PDF, inspect the final file page by page, test links, verify it opens on mobile, and ensure the file matches the product description.
+7. Create an honest Selar listing with who it is for, what problem it solves, exact included deliverables, format, price, limitations, preview/sample strategy, and delivery details.
+8. Test the actual listing, checkout, and file delivery before promoting it. Confirm current pricing and fulfilment from the live listing.
+9. Promote the product through YouTube, TikTok, Facebook, Pinterest, and Medium content, then use Linktree as the central social-bio route to the relevant article or Selar page.
+10. Review sales and buyer questions when real data becomes available. Improve the product based on evidence rather than promising financial or personal results.
 
-Do not present a manuscript or a cover mockup as a finished downloadable product. Check all files, hyperlinks, mobile readability, and delivery flow before launch.
-
+A manuscript, a cover mock-up, or an image prompt is not a finished PDF. Never provide a free PDF download unless the owner explicitly changes this policy. Blog posts and social content can still give readers useful information without giving away the paid product.
 ## Revenue stream 3: direct company relationships
 
 SilentEarn can proactively approach relevant software companies for:
@@ -101,7 +104,7 @@ This is an experiment, not a guarantee of income. Affiliate revenue may take tim
 - Search impressions and clicks (for example, via Google Search Console).
 - Engaged visits and outbound product link clicks.
 - Affiliate conversions, approved commissions, reversals, and payout terms as shown by programme reports.
-- Free resource usage and confirmed email opt-ins after an actual newsletter provider is connected.
+- Paid product-page visits and confirmed sales after an actual newsletter provider is connected.
 - Partner outreach messages, meaningful replies, accepted partnerships, and paid sponsorships.
 - Reader questions, corrections, and product feedback.
 
