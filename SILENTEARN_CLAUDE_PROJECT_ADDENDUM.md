@@ -3,7 +3,7 @@
 
 Use this document alongside the SilentEarn Brand Bible and Ultimate Full Campaign Prompt. It adds product engagement features and a practical monetization strategy without changing the SilentEarn name, logo, niche, palette, or core product-first publishing model.
 
-## Signature identity
+## Official creator and logo assets\nThe owner-provided creator photos and SilentEarn logo are the actual brand assets, not merely references. Always use the exact supplied logo without redesign/recolouring, and use the supplied primary creator photo whenever a SilentEarn creator is depicted. Never substitute a generated face. Keep originals unchanged and create separate web derivatives only for display needs. The alternate photo includes other people in the background, so do not use it in public promotional assets by default. Follow `SILENTEARN_OFFICIAL_BRAND_ASSET_RULES.md`.\n\n## Signature identity
 - Brand: SilentEarn
 - Positioning: AI • Digital Skills • Real Opportunities
 - Philosophy: Learn. Build. Earn. Grow.
