@@ -446,3 +446,26 @@ html{scroll-padding-top:92px}
 .pending-social{opacity:.58;cursor:default;pointer-events:none}
 .resource-card-actions .save-button{white-space:nowrap}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
+
+/* Published blog library */
+.article-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+.article-card{display:flex;flex-direction:column;overflow:hidden;background:#fff;border:1px solid var(--line);border-radius:23px;box-shadow:var(--shadow-soft)}
+.article-art{min-height:210px;padding:22px;display:flex;flex-direction:column;justify-content:space-between;gap:12px;color:#fff;background:radial-gradient(circle at 82% 12%,rgba(24,198,180,.30),transparent 32%),linear-gradient(135deg,#0b1220,#173545)}
+.article-art-mark{font-family:"Space Grotesk",sans-serif;font-size:52px;font-weight:700;line-height:1;color:#18c6b4;letter-spacing:-.08em}
+.article-art small{font-size:9px;font-weight:800;letter-spacing:.15em;color:#18c6b4}
+.article-art strong{font-family:"Space Grotesk",sans-serif;font-size:clamp(22px,3vw,28px);line-height:1.15;max-width:420px}
+.article-body{display:flex;flex-direction:column;align-items:flex-start;flex:1;padding:23px}
+.article-status{display:inline-flex;align-items:center;padding:5px 9px;background:#e7fbf7;color:#087f70;border-radius:999px;font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:.07em}
+.article-body h3{font-family:"Space Grotesk",sans-serif;font-size:23px;line-height:1.17;margin:13px 0 9px}
+.article-body p{font-size:14px;color:var(--muted);margin:0 0 15px}
+.article-meta{display:flex;gap:14px;flex-wrap:wrap;color:#64748b;font-size:10px;margin:0 0 18px}
+.article-card-actions{display:flex;align-items:center;gap:9px;flex-wrap:wrap;margin-top:auto}
+.article-card-actions .btn{font-size:12px;padding:11px 13px}
+.article-empty{grid-column:1/-1;padding:32px;border:1px dashed #bdeee6;background:#f4fdfa;border-radius:20px}
+.article-empty>span{color:#087f70;font-size:30px}
+.article-empty h3{font-family:"Space Grotesk",sans-serif;font-size:23px;margin:9px 0}
+.article-empty p{color:var(--muted);font-size:13px}
+.blog-bottom-note{display:flex;align-items:center;gap:12px;margin-top:20px;padding:16px 18px;border-radius:14px;background:#f7f9fc;border:1px solid var(--line)}
+.blog-bottom-note>span{color:#087f70;font-size:22px}
+.blog-bottom-note p{font-size:12px;color:#64748b;margin:0}
+@media(max-width:780px){.article-grid{grid-template-columns:1fr}.article-art{min-height:180px}.article-body{padding:19px}}
