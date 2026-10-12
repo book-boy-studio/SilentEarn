@@ -1,8 +1,6 @@
 const PRODUCTS = []; // Add only researched, real products and verified destinations.
 const RESOURCES = [
-  { id:'reality-check', title:'The Product Reality Check Worksheet', category:'BUYING SMART', description:'A practical worksheet to define your need, verify a product, compare trade-offs, and make a considered decision.', href:'product-reality-check.html', fileUrl:'assets/silenteearn-reality-check-worksheet.pdf.b64', fileName:'SilentEarn-Product-Reality-Check.pdf', status:'Free printable guide', cta:'Download PDF' },
-  { id:'skill-planner', title:'Digital Skill Path Planner', category:'LEARNING', description:'A guided planner for comparing a skill, learning requirements, practice opportunities, and next steps.', href:'', status:'In preparation', cta:'Coming soon' },
-  { id:'affiliate-checklist', title:'Before You Buy: AI Tool Checklist', category:'AI TOOLS', description:'A compact checklist for checking pricing, limitations, privacy, and suitability before signing up.', href:'', status:'In preparation', cta:'Coming soon' }
+  { id:'paid-guides', title:'Premium PDF Guides & Workbooks', category:'SELAR DIGITAL STORE', description:'Explore substantive paid guides, workbooks, templates, and digital products from SilentEarn. Current products, prices, and delivery details are displayed on Selar.', href:'https://selar.com/m/SilentEarn', status:'Premium paid products', cta:'Shop on Selar' }
 ];
 const SKILL_PATHS = [
   { id:'path-ai', title:'AI Tools Beginner Path', level:'START HERE', duration:'3 stages', description:'Define one task, compare a small number of tools, and practise with a real example before paying.', steps:['Choose a task you actually need to complete','Compare free plans, limits, and privacy','Test a simple workflow and write down the result'] },
@@ -254,7 +252,7 @@ async function sendForm(form,status,button,successMessage) {
     if (!response.ok) throw new Error(data.error || 'Unable to send your request.');
     status.textContent=successMessage;status.style.color='var(--success)';form.reset();
   } catch(error) {
-    status.textContent=(error && error.message) || 'The request could not be sent. Please contact SilentEarn by email or WhatsApp.';status.style.color='var(--danger)';
+    status.textContent=(error && error.message) || 'The request could not be sent. Please contact SilentEarn by email or phone.';status.style.color='var(--danger)';
   } finally {button.disabled=false;button.innerHTML=original;}
 }
 function initForms() {
