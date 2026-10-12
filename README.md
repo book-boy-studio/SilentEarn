@@ -1,58 +1,75 @@
-# SilentEarn — Product Promotion Video Brand
+# SilentEarn — The Quiet Advantage
 
-SilentEarn is a product-first video brand focused exclusively on YouTube and TikTok.
+SilentEarn is a blogging-first digital publishing and product-discovery brand focused on AI tools, digital skills, freelancing, and realistic online opportunities.
 
 ## Brand
 - **Name:** SilentEarn
 - **Positioning:** AI • Digital Skills • Real Opportunities
 - **Philosophy:** Learn. Build. Earn. Grow.
-- **Business model:** Research relevant products and promote them through clear product-focused videos and affiliate links.
-- **Editing:** CapCut only. Do not recommend VN.
-- **Visual identity:** Midnight navy (#0B1220), electric teal (#18C6B4), soft white (#F7F9FC), slate gray (#64748B).
+- **Signature idea:** The Quiet Advantage — less hype, better questions, more useful decisions.
+- **Palette:** Midnight navy (#0B1220), electric teal (#18C6B4), soft white (#F7F9FC), slate gray (#64748B).
 
-## Website purpose
-The website is a product discovery hub supporting SilentEarn's YouTube and TikTok videos. It provides:
-- Featured products and their official or verified affiliate destinations.
-- Published YouTube/TikTok videos connected to products.
-- A concise product-discovery approach.
-- Contact and relevant legal information.
+## Website features
+- SilentEarn Reality Check: explains what readers should verify before choosing a product.
+- Find My Tool: interactive questionnaire that gives a helpful starting point without pretending an unverified product is recommended.
+- One Useful Win: small practical actions by topic.
+- Free Resource Vault: includes the printable Product Reality Check worksheet and clearly labels unfinished resources.
+- Skill paths: step-by-step learning plans.
+- Save for Later: local browser reading list; it is not synced across devices.
+- SilentEarn Notes: signup-request form. Automated newsletter subscription is not active until a provider is connected.
+- Revenue pathways: affiliate partnerships, validated digital products, and transparent company partnerships.
+- Contact form, WhatsApp, affiliate disclosure, privacy, and terms.
 
-It is not intended as a blog, e-book/PDF shop, newsletter funnel, or multi-platform social content hub.
+## Add a product
+Edit the `PRODUCTS` array near the top of `script.js`. Do not add fake data or placeholders as if they are published products. Each real product can include:
+- `name`, `category`, and `description`
+- `affiliateUrl` or `officialUrl` (never mislabel an ordinary URL as an affiliate link)
+- `bestFor`, `notFor`, `priceNotes`
+- `pros` and `cons` based on verified details
+- `verifiedDate` and `sourceUrls` for internal tracking
 
-## Add products
-Edit the `PRODUCTS` array in `script.js`. Each item can include:
-- `name`: accurate product name.
-- `category`: product category.
-- `hook`: concise, truthful benefit/positioning line.
-- `description`: clear summary based on verified information.
-- `highlights`: optional list of real features.
-- `affiliateUrl`: your valid affiliate link, if you have joined that program.
-- `officialUrl`: official product URL when no affiliate link is being used.
-- `priceLabel`: optional current price only after checking.
-- `imageUrl`: product image URL you have permission to use.
-- `videoUrl`: published SilentEarn video related to the product.
+Before adding a product, research the official feature list, pricing and billing, limitations, refund/cancellation terms, privacy, relevant availability, and credible independent sources. Never invent personal testing, testimonials, earnings, or guaranteed results. Affiliate cards show a disclosure.
 
-Do not invent products, prices, product features, personal tests, testimonials, or results. Avoid adding a card until the product name, details, and destination have been checked. Affiliate links automatically display a short disclosure on the product card.
+## Resources
+The first resource is `product-reality-check.html`, a mobile-friendly worksheet with a Print / Save as PDF control. On Android, use the browser print interface and select Save as PDF when available. Other resources remain marked as in preparation until their files genuinely exist.
 
-## Add published videos
-Edit the `VIDEOS` array in `script.js`. Only include videos actually published on YouTube or TikTok.
-Fields: `platform`, `title`, `description`, `videoUrl`, `videoId`, `thumbnailUrl`, `category`, and `duration`.
-Use real public video URLs. Do not add placeholder videos as if they were already published.
+Edit the `RESOURCES` array in `script.js` when adding a resource. Confirm every download or destination works before marking an item as ready.
 
-## Official channels
+## Learning paths and One Useful Win
+Edit the `SKILL_PATHS` and `WINS` objects in `script.js` to expand the learning paths and short practical actions. Save for Later uses localStorage in the current browser/device; it does not collect an account or sync to a server.
+
+## Monetization plan
+1. Affiliate links: relevant product recommendations and product research, with clear disclosure.
+2. Digital products: build free resources first; develop paid e-books or templates after validating demand.
+3. Company partnerships: seek affiliate programme terms, product access, reader offers, and disclosed sponsored educational coverage from relevant software companies.
+
+Do not promise a specific income outcome. Do not claim traffic, customers, performance, or audience metrics without evidence.
+
+## Social channels
+Previously shared profiles:
 - YouTube: https://youtube.com/@silentearnnn
+- Facebook: https://www.facebook.com/SilentEarn
 - TikTok: https://www.tiktok.com/@silentearnn
+- WhatsApp: https://wa.me/2348110845979
 
-No other social platforms are official SilentEarn content channels.
+Instagram, Pinterest, X, and LinkedIn are listed as intended distribution platforms; replace generic destinations in `index.html` with actual SilentEarn profile URLs when confirmed.
 
-## Affiliate disclosure
-Keep disclosures clear, short, and close to affiliate recommendations. The site currently uses this concise wording: "Some product links are affiliate links. If you buy through an eligible link, SilentEarn may earn a commission at no extra cost to you."
-
-## Contact form
-The endpoint is `/api/contact`. Configure in Vercel:
+## Contact form and newsletter
+The API endpoint is `/api/contact`. Configure these Vercel environment variables:
 - `RESEND_API_KEY`
 - `EMAIL_TO` (defaults to `SilentEarnn@email.com`)
-- `EMAIL_FROM` (must be supported by the Resend account)
+- `EMAIL_FROM` (must be supported by your Resend account)
 
-## Deployment
-After deployment, check the homepage on Android/mobile and desktop, click the YouTube and TikTok links, test navigation, check product destination URLs, and submit the contact form. A successful commit does not itself prove that the live deployment succeeded.
+The SilentEarn Notes form currently sends a contact request. It does not automatically subscribe users to a mailing list or deliver PDF files. Connect a newsletter provider, consent process, and unsubscribe mechanism before promising automated email delivery.
+
+## Revenue-inspired outreach
+See `SILENTEARN_REVENUE_AND_ENGAGEMENT_PLAYBOOK.md` for a realistic approach to prospecting, affiliate partnerships, brand sponsorships, digital product validation, and measurement.
+
+## Deployment checklist
+After deployment:
+- Test mobile and desktop navigation.
+- Test Find My Tool, One Useful Win, save/remove reading-list items, and the printable worksheet.
+- Test the contact form and the newsletter request form.
+- Verify every product URL, disclosure, and resource file.
+- Replace generic social destinations with confirmed brand profiles.
+- Confirm the Vercel deployment actually succeeded; a GitHub commit alone does not prove the live site is working.
